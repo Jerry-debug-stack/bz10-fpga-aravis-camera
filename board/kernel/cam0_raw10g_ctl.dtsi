@@ -1,0 +1,10 @@
+/* Development fragment only. Include after matching PL XSA/address verification. */
+&amba {
+	cam0_raw10g_trigger: cam0-raw10g-trigger@80040000 {
+		compatible = "local,bz10-cam0-raw10g-trigger-v1";
+		/* AXI GPIO control then AXI GPIO status; each has 64 KiB. */
+		reg = <0x0 0x80040000 0x0 0x10000>,
+		      <0x0 0x80050000 0x0 0x10000>;
+		status = "okay";
+	};
+};

@@ -1,0 +1,4 @@
+the_ROM_image:
+{
+    [destination_device=pl] out/cam0_raw10g_trigger_v2_2025_2.runs/impl_1/bz10_cam0_raw10g_trigger.bit
+}

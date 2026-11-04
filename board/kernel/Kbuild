@@ -1,0 +1,1 @@
+obj-m += bz10_cam0_ctl.o

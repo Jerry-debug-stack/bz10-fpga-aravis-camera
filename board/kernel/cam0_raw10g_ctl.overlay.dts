@@ -1,0 +1,19 @@
+/dts-v1/;
+/plugin/;
+
+/* Temporary configfs overlay for the JTAG-only trigger candidate. */
+/ {
+	fragment@0 {
+		target-path = "/axi";
+		__overlay__ {
+			#address-cells = <2>;
+			#size-cells = <2>;
+			cam0-raw10g-trigger@80040000 {
+				compatible = "local,bz10-cam0-raw10g-trigger-v1";
+				reg = <0x0 0x80040000 0x0 0x10000>,
+				      <0x0 0x80050000 0x0 0x10000>;
+				status = "okay";
+			};
+		};
+	};
+};
